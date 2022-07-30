@@ -79,8 +79,7 @@ public class SortSpeedTest
 		//prints first and last 10 indexes of sorted array
 		printTen(array1);
 		
-	//Selection sort portion
-		
+	//Selection sort portion	
 		//inform the user as to what is going on
 		System.out.println("\nSelection sorting " + array1.length + " prime numbers...");
 		
@@ -112,7 +111,6 @@ public class SortSpeedTest
 		int arraySortTemp;
 		int indexMinus = 0;
 		
-
 		//bubble sort Array1		
 		for (int j = 0; j < array1.length - 1; j++)
 		{
@@ -127,7 +125,6 @@ public class SortSpeedTest
 			}
 			indexMinus++;
 		}
-		return;
 	}
 	
 	/**
@@ -154,9 +151,7 @@ public class SortSpeedTest
 			}
 			indexCurrent--;
 		}
-		return;
 	}
-	
 	
 	/**
 	The printTen method prints the first and last 10 indexes of an array
@@ -165,13 +160,12 @@ public class SortSpeedTest
 	public static void printTen(int[] sortedArray)
 	{
 		String frst10 = "First 10",
-		lst10 = "Last 10";
+				lst10 = "Last 10";
 		
 		System.out.printf("%-10s %-10s\n", frst10, lst10);
 		for (int i = 0; i < 10; i++)
 		{
 			System.out.printf("%-10d %-10d\n", sortedArray[i], sortedArray[sortedArray.length - 1 - i]);
 		}
-		return;
 	}
 }
